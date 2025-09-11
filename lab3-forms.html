@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My test page</title>
+  </head>
+  <body>
+    <h1>Coffee order form</h1>
+    <form action="https://www.w3schools.com/action_page.php" method="get">
+        /* Name input */
+        <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" />
+        </p>
+        /* Email input */
+        <p>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="user_email" />
+        </p>
+        /* Coffee type dropdown */
+        <p>
+            <label for="coffee_type">
+                <span>Coffee type:</span>
+            </label>
+            <select id="coffee_type" name="coffee_choice">
+                <option value="latte">Latte</option>
+                <option value="cappuccino">Cappuccino</option>
+                <option value="americano">Americano</option>
+                <option value="Espresso">Espresso</option>
+            </select>
+        </p>
+        /* Size selection */
+        <p>
+            <fieldset>
+                <legend>Select your size</legend>
+                <ul>
+                    <li>
+                        <label for="small">Small</label>
+                        <input type="radio" id="small" name="size" value="small" />
+                    </li>
+                    <li>
+                        <label for="medium">Medium</label>
+                        <input type="radio" id="medium" name="size" value="medium" />
+                    </li>
+                                        <li>
+                        <label for="large">Large</label>
+                        <input type="radio" id="large" name="size" value="large" />
+                    </li>
+                </ul>
+            </fieldset>
+        </p>
+        /* Options selection */
+        <p>
+            <fieldset>
+                <legend>Choose options</legend>
+                <ul>
+                    <li>
+                        <label for="whipped_cream">Whipped Cream</label>
+                        <input
+                            type="checkbox"
+                            id="whipped_cream"
+                            name="extras"
+                            value="whipped_cream"
+                        />
+                    </li>
+                    <li>
+                        <label for="extra_shot">Extra Shot</label>
+                        <input
+                            type="checkbox"
+                            id="extra_shot"
+                            name="extras"
+                            value="extra_shot"
+                        />
+                    </li>
+                    <li>
+                        <label for="almond_milk">Almond Milk</label>
+                        <input
+                            type="checkbox"
+                            id="almond_milk"
+                            name="extras"
+                            value="almond_milk"
+                        />
+                    </li>
+                </ul>
+            </fieldset>
+        </p>
+        /* Special instructions */
+        <p>
+            <label for="special_instructions">Special instructions</label>
+            <textarea id="special_instructions" name="special_instructions"></textarea>
+        </p>
+        /* Submit button */
+        <p class="button">
+            <button type="submit">Submit your order</button>
+        </p>
+    </form>
+  </body>
+</html>
